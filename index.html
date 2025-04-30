@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/style.css">
+    <title>List Order Cafeshop</title>
+</head>
+
+<body>
+    <h2>🍹 سفارش ساز نوشیدنی</h2>
+
+    <div class="card" id="drinkCard">
+        <div class="drink" id="drinkText">نوع نوشیدنی را انتخاب کن</div>
+        <input type="text" id="nameInput" placeholder="نام شما">
+        <div>
+            <select name="" id="drinkSelect">
+                <option value="" disabled selected>- - انتخاب نوشیدنی - -</option><br>
+                <option value="قهوه">☕قهوه</option>
+                <option value="بستنی">🍦 بستنی</option>
+                <option value="دسر">🍹 دسر</option>
+                <option value="کافه گلاسه">🍺 کافه گلاسه</option>
+            </select>
+            <button onclick="submitOrder()">ثبت سفارش</button>
+            <button onclick="toggleTheme()">تغییر تم</button>
+            <button onclick="reset()">خالی کردن لیست</button>
+
+            <div id="errorMsg" class="error"></div>
+        </div>
+    </div>
+    <div class="order-box" id="orderList">
+        <strong>سفارش های ثبت شده:</strong>
+        <ul id="orderUl"></ul>
+    </div>
+
+
+    <script src="/assets/javascript.js"></script>
+</body>
+
+</html>
