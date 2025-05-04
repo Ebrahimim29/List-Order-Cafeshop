@@ -8,30 +8,31 @@
     <title>List Order Cafeshop</title>
 </head>
 
-<body>
-    <h2>🍹 سفارش ساز نوشیدنی</h2>
+<body dir="ltr">
+    <h2>🍹 سفارش ساز نوشیدنی</h2><br>
 
     <div class="card" id="drinkCard">
         <div class="drink" id="drinkText">نوع نوشیدنی را انتخاب کن</div>
         <input type="text" id="nameInput" placeholder="نام شما">
-        <div>
+        <div class="menu">
             <select name="" id="drinkSelect">
                 <option value="" disabled selected>- - انتخاب نوشیدنی - -</option><br>
                 <option value="قهوه">☕قهوه</option>
                 <option value="بستنی">🍦 بستنی</option>
                 <option value="دسر">🍹 دسر</option>
                 <option value="کافه گلاسه">🍺 کافه گلاسه</option>
-            </select>
-            <button onclick="submitOrder()">ثبت سفارش</button>
-            <button onclick="toggleTheme()">تغییر تم</button>
-            <button onclick="reset()">خالی کردن لیست</button>
-
+            </select><br>
+            <div>
+                <button onclick="submitOrder()">ثبت سفارش</button>
+                <button onclick="toggleTheme()">تغییر تم</button>
+                <button onclick="reset()">خالی کردن لیست</button>
+            </div>
             <div id="errorMsg" class="error"></div>
         </div>
-    </div>
+    </div><br>
     <div class="order-box" id="orderList">
-        <strong>سفارش های ثبت شده:</strong>
-        <ul id="orderUl"></ul>
+        <strong>:سفارش های ثبت شده شما</strong>
+        <ul id="ordersUl"></ul>
     </div>
 
 

@@ -7,12 +7,17 @@ body{
     background-color: aquamarine;
 }
 .card{
-    width: 60%;
-    height: 400px;
+    width: 70%;
+    height: 300px;
     background-color: snow;
     text-align: center;
     border-radius: 5rem;
-    display: inline-block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: auto;
 }
 button{
     width: 100px;
@@ -25,4 +30,29 @@ button{
 }
 button:hover{
     background-color: blueviolet;
+}
+.order-box{
+    width:60%;
+    height:200px;
+    background-color: chocolate;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5rem;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.error{
+    color: red;
+}
+.drink{
+    color: blueviolet;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.dark{
+    background: linear-gradient(to right, blueviolet,yellowgreen);
+    color: white;
 }
